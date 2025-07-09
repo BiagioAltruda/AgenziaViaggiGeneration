@@ -1,0 +1,50 @@
+/*
+COLOR PALETTE
+Main Palette
+Ocean Blue – #2A5C8A (Trust, stability, and the sea)
+
+Sunset Orange – #FF7E4D (Energy, warmth, and excitement)
+
+Fresh Green – #4CAF7D (Nature, eco-friendliness, and growth)
+
+Sand Beige – #F5E6CA (Neutral warmth, beaches, comfort)
+
+Deep Teal – #1A6F7A (Luxury, depth, and sophistication)
+
+Accent & Highlight Colors
+Vibrant Coral – #FF6B6B (Call-to-action buttons, urgency)
+
+Sunny Yellow – #FFD166 (Optimism, happiness, highlights)
+
+Neutrals (For Text & Backgrounds)
+Dark Gray – #333333 (Headings, important text)
+
+Medium Gray – #777777 (Secondary text)
+
+Light Gray – #F5F5F5 (Backgrounds, subtle contrast)
+
+Usage Suggestions:
+Primary Brand Colors: Ocean Blue + Sunset Orange (great for logos & headers)
+
+Secondary Colors: Fresh Green + Deep Teal (for eco-tours, luxury packages)
+
+Accents: Coral for buttons (e.g., "Book Now") and Yellow for discounts
+
+Neutrals: Sand Beige for backgrounds, Dark Gray for text
+*/
+
+.neutral-1{
+    background-color: #777777;
+}
+.main-color-1{
+    background-color: #ff7f4dbe;
+}
+.divider{
+    border: 5px solid #FF7E4D;
+    margin: 30px;
+    padding: 0;
+    background-color: #FF7E4D;
+}
+.separator{
+    height: 90%;
+}
