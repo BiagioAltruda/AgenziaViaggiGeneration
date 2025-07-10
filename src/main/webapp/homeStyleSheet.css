@@ -48,3 +48,9 @@ Neutrals: Sand Beige for backgrounds, Dark Gray for text
 .separator{
     height: 90%;
 }
+.text-1{
+    color: #1A6F7A;
+}
+.carousel-item{
+    margin: 2%;
+}
