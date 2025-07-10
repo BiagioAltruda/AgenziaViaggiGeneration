@@ -14,16 +14,20 @@
   </head>
 
   <style>
-    .top{
+    .ChiSiamoPrompt{
         margin-top: 20px;
+        background-color: #fe7e4d;
+        background-position: top 10px;
+
     }
     .size{
         width: 500px;
         height: 500px;
     }
-    .bg-color{
-        background-color: #fe7e4d;
-    }
+    .textModify{
+        align-content: center;
+        margin-right: 120px;
+        }
   </style>
 
   <body class="neutral-1">
@@ -107,12 +111,13 @@
   </ol>
 </nav>
   <!--Colonne con immagine e descrizione-->
-   <div class="container-fluid text-center top bg-color">
+   <div class="container-fluid text-center ChiSiamoPrompt">
   <div class="row">
-    <div class="col">
-      <img src="ChiSiamoImg.png" class="size">
-    </div>
-    <div class="col">
+    <div class="card">
+              <img src="ChiSiamoImg.png" class="card-img-top" style="width: 500px; height: auto; display: block;" alt="..." />
+          </div>
+    <div class="card-body">
+            <div class="card-text-end">
       <h1>CHI SIAMO?</h1>
 
 <h4>(Domanda legittima, visto che probabilmente stai cercando di capire se siamo scappati col tuo acconto.)</h4>
@@ -128,6 +133,28 @@ E ci riusciamo. Sempre.
     Prenotazione cancellata perché “il resort è improvvisamente diventato uno zoo”? ✅ Abbonati alla nostra newsletter per storie ancora più tragiche.<br>
 
 Ma non importa! Perché noi ci impegnamo al massimo per offrirti un’assistenza impeccabile… nel dirti “eh, capita” con un sorriso.
-    </div>
+   
+</div>
+    <div id="carbonads"><span>
+<span class="carbon-wrap">
+<img src="ChiSiamoImg.png" alt="ads via Carbon" border="0" height="500" width="500" style="max-width: 500px;">
+<a >
+    <h1>CHI SIAMO?</h1>
+
+<h4>(Domanda legittima, visto che probabilmente stai cercando di capire se siamo scappati col tuo acconto.)</h4>
+
+Siamo Sto’ Viaggio, l’agenzia di viaggi nata due anni fa con un sogno: rendere ogni vacanza un’avventura indimenticabile.
+E ci riusciamo. Sempre.
+ <h1>LA NOSTRA MISSIONE</h1>
+
+    Perdere il tuo volo? ✅ Primo round, gratis.<br>
+
+    Bagaglio smarrito tra le dimensioni parallele? ✅ Lo ritrovi… forse.<br>
+
+    Prenotazione cancellata perché “il resort è improvvisamente diventato uno zoo”? ✅ Abbonati alla nostra newsletter per storie ancora più tragiche.<br>
+
+Ma non importa! Perché noi ci impegnamo al massimo per offrirti un’assistenza impeccabile… nel dirti “eh, capita” con un sorriso.
+</a>
+</span>
     </body>
 </html>
