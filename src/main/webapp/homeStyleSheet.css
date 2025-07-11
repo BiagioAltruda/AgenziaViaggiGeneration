@@ -48,3 +48,15 @@ Neutrals: Sand Beige for backgrounds, Dark Gray for text
 .separator{
     height: 90%;
 }
+.text-1{
+    color: #1A6F7A;
+}
+.card-container{
+    width: 370px;
+    background-color: #FF7E4D;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 1%;
+    border-radius: 20px;
+    
+}
