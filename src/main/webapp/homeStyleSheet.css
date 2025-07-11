@@ -50,6 +50,8 @@ Neutrals: Sand Beige for backgrounds, Dark Gray for text
 }
 .text-1{
     color: #1A6F7A;
+    font-size: 26px;
+    
 }
 .card-container{
     width: 370px;
@@ -60,4 +62,7 @@ Neutrals: Sand Beige for backgrounds, Dark Gray for text
     margin-top: 10px;
     padding: 1%;
     border-radius: 20px;
+}
+#carouselSideText{
+    padding: 100px;
 }
