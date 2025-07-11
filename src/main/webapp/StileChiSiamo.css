@@ -1,0 +1,23 @@
+.ChiSiamoPrompt{
+        margin-top: 20px;
+        background-color: #fe7e4d;
+        background-position: top 10px;
+    }
+    .size{
+        width: 500px;
+        height: 500px;
+    }
+    .textModify{
+        align-content: center;
+        margin-right: 120px;
+        }
+
+.barraDiNavigazione{
+  position: absolute;    
+  left: 175px; 
+  top: 70px;     
+}
+.PosizioneCard{
+   margin-top: 50px;  
+   margin-bottom: 50px;
+}
