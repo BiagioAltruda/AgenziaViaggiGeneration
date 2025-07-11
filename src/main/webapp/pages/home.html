@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome (icone) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/homeStyleSheet.css" />
+    <title>Insert title here</title>
+  </head>
+
+  <body class="neutral-1">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <!----------NAV BAR----------->
+    <nav id="navbar"class="navbar navbar-expand-lg main-color-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="destinazioni.html"
+                >Destinazioni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="piani.html">Piani</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offerte_lampo.html">Offerte Lampo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chi Siamo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Chi_Siamo.html">Noi in Breve</a></li>
+                <li><a class="dropdown-item" href="Servizi.html">Servizi</a></li>
+                <li><a class="dropdown-item" href="Contatti.html"">Contatti</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Lavora con noi!</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!----------Stock Background Foto----------->
+    <img src="../img/stock2.jpg" alt="" class="img-fluid" width="100%" />
+    <br />
+
+    <!----------Carosello----------->
+
+    <div class="container-fluid">
+      <div class="row divider rounded">
+        <div class="col-7">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/destinazione1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/destinazione2.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="../img/destinazione3.jpg" class="d-block w-100" alt="..." />
+              </div>
+              
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!----------Descrizione e call to action----------->
+        <div class="col-4 text-1">
+          <div id="carouselSideText" class="container-fluid position-relative justify-content-center">
+            <h1 style="font-size: 40px;">Prenota la vacanza dei tuoi sogni!</h2>
+            <br />
+            <p style="font-weight: bold">È tempo di tornare a viaggiare!</p>
+            <br />
+            <!----------Pulsante----------->
+            <button
+              type="button"
+              class="btn btn-primary position-absolute"
+              style="translate: 80px 20px"
+            >
+              Primary
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------Carte Destinazioni----------->
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-4 card-container">
+          <div class="card">
+              <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h3> Londra</h1> <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              <ul>
+                <li><p> Costo: 250€</p></li>
+                <li><p>Data: 15 Ottobre 2024</p></li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 card-container">
+          <div class="card">
+              <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h3> Londra</h1> <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              <ul>
+                <li><p> Costo: 250€</p></li>
+                <li><p>Data: 15 Ottobre 2024</p></li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 card-container">
+          <div class="card">
+              <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h3> Londra</h1> <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              <ul>
+                <li><p> Costo: 250€</p></li>
+                <li><p>Data: 15 Ottobre 2024</p></li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-4 card-container">
+          <div class="card">
+              <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h3> Londra</h1> <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              <ul>
+                <li><p> Costo: 250€</p></li>
+                <li><p>Data: 15 Ottobre 2024</p></li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 card-container">
+          <div class="card">
+              <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h3> Londra</h1> <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              <ul>
+                <li><p> Costo: 250€</p></li>
+                <li><p>Data: 15 Ottobre 2024</p></li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 card-container">
+          <div class="card">
+              <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h3> Londra</h1> <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              <ul>
+                <li><p> Costo: 250€</p></li>
+                <li><p>Data: 15 Ottobre 2024</p></li>
+              </ul>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br>
+<!-- Footer -->
+<footer class="main-color-1 text-center">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.facebook.com/" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- X -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/" role="button"
+        ><i class="fab fa-x"></i
+      ></a>
+
+      <!-- Google -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.google.it/?hl=it" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://it.linkedin.com/" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/BiagioAltruda/AgenziaViaggiGeneration.git" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+<!-- Sezione: Newsletter -->
+<section class="py-5">
+  <div class="container">
+    <form action="#">
+      <div class="row justify-content-center align-items-center">
+        <!-- Testo invito -->
+        <div class="col-12 col-md-auto mb-3 mb-md-0 text-center text-md-end">
+          <p class="mb-0 fw-bold">Iscriviti alla nostra newsletter</p>
+        </div>
+
+        <!-- Campo email -->
+        <div class="col-12 col-md-5 mb-3 mb-md-0">
+          <input type="email" class="form-control" placeholder="Indirizzo E-mail" required />
+        </div>
+
+        <!-- Bottone -->
+        <div class="col-12 col-md-auto text-center text-md-start">
+          <button type="submit" class="btn btn-outline-dark">
+            Iscriviti
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+    
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+       Viaggi tutto l'anno! Iscriviti alla nostra newsletter, 
+       riceverete regolarmente le nostre offerte speciali, 
+       le ultime novità sulle destinazioni e le attività da non perdere in giro per il mondo.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+   <!-- Section: Links -->
+<section class="py-4">
+  <div class="container text-center">
+  <!--Grid row-->
+  <div class="row justify-content-center">
+    <!--Grid column UNICA-->
+    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+      <h5 class="text-uppercase">Contatti utili</h5>
+
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a class="text-body" href="Chi_Siamo.html">Chi siamo</a>
+        </li>
+        <li>
+          <a class="text-body" href="#!">Termini e condizioni</a>
+        </li>
+        <li>
+          <a class="text-body" href="#!">Privacy</a>
+        </li>
+        <li>
+          <a class="text-body" href="#!">Assistenza</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <!-- Fine colonna -->
+  </div>
+  <!-- Fine row -->
+</section>
+<!-- Fine sezione Links -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2025 Copyright:
+    <a class="text-reset fw-bold" href="#">stoviaggio.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  </body>
+</html>
