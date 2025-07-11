@@ -50,6 +50,8 @@ Neutrals: Sand Beige for backgrounds, Dark Gray for text
 }
 .text-1{
     color: #1A6F7A;
+    font-size: 26px;
+    
 }
 .card-container{
     width: 370px;
@@ -59,4 +61,25 @@ Neutrals: Sand Beige for backgrounds, Dark Gray for text
     padding: 1%;
     border-radius: 20px;
     
+} iframe{
+    border: 0;
+      width: 100%;
+      height: 450px;
+      padding: 10px;
+} .alineareCentro{
+    text-align: center;
+}
+#carouselSideText{
+    padding: 100px;
+    
+} iframe{
+    border: 0;
+      width: 100%;
+      height: 450px;
+      padding: 10px;
+} .alineareCentro{
+    text-align: center;
+}
+#carouselSideText{
+    padding: 100px;
 }
