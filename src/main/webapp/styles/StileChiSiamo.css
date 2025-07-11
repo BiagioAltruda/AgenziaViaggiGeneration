@@ -23,3 +23,8 @@
    margin-top: 50px;  
    margin-bottom: 50px;
 }
+
+.descrizione{
+  border-right: solid #fe7f4d5e 5px;
+margin-bottom: 5px;
+}
