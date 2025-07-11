@@ -64,6 +64,17 @@ Neutrals: Sand Beige for backgrounds, Dark Gray for text
       width: 100%;
       height: 450px;
       padding: 10px;
-} .alineareCentro{
+} 
+/* Centrare contenuti */
+.alineareCentro{
     text-align: center;
+    margin-top: 20px;
+} 
+/* Icone visivamente più grandi e distanziate */
+
+.dimensioneImaginiTesto p {
+    font-size: 20px;
+    margin: 10px 0;
+} .dimensioneImaginiTesto i {
+    color: blue;
 }
