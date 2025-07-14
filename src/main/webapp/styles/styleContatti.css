@@ -1,5 +1,5 @@
 .main-color-1{
-    background-color: #ff7f4dbe;
+    background-color: #f4a460;
 }
 iframe{
     border: 0;
@@ -33,4 +33,6 @@ iframe{
 }
 #carouselSideText{
     padding: 100px;
+} .neutral-1{
+    background-color: #fff8dc;
 }
