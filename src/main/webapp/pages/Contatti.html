@@ -118,38 +118,61 @@
       <img src="logo" alt="Logo STO VIAGGIO" />
     </div>
 
-    <!-- SEZIONE CONTATTI -->
-    <div class="alineareCentro">
+    <!-- SEZIONE CONTATTI e FORM -->
+<div class="container text-center">
+  <div class="row">
+  
+    <!-- Colonna Sinistra: Info Contatti -->
+    <div class="col-sm-6">
       <h3>Ci potete trovare:</h3>
-
       <div class="dimensioneImaginiTesto">
         <p>
           Nello storico tratto di mare, noto anche come Triangolo del Diavolo,
           dove si verificano leggendarie sparizioni.
         </p>
-
-        <!-- Indirizzo con icona -->
         <p>
           <i class="fa-solid fa-location-dot fa-2x"></i>
           25.000291219832867, -71.00006438317088
         </p>
-        <br />
-
-        <!-- Telefono con icona -->
         <p>
           <i class="fa-solid fa-phone-volume fa-2x"></i>
           +39 333 999 6622
         </p>
-        <br />
-
-        <!-- Email con icona -->
         <p>
           <i class="fa-solid fa-at fa-2x"></i>
           stoviaggio@gmail.com
         </p>
       </div>
     </div>
-    <br>
+
+    <!-- Colonna Destra: Form Contatti -->
+    <div class="col-sm-6">
+      <h3>Contattaci per Info</h3>
+      <form>
+        <div class ="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Nome" required>
+        </div>
+         <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Cognome" required>
+        </div>
+        </div>
+         <div class="form-group mb-3">
+          <input type="text" class="form-control" placeholder="Telefono" required>
+        </div>
+        <div class="form-group mb-3">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="form-group mb-3">
+          <textarea class="form-control" rows="4" placeholder="Il tuo messaggio" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Invia</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+<br>
     <!-- Footer -->
 <footer class="main-color-1 text-center">
   <!-- Grid container -->
