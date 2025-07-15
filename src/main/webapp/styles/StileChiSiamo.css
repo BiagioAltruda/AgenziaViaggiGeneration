@@ -26,11 +26,6 @@
    margin-bottom: 50px;
 }
 
-.descrizione{
-  border-right: solid #fe7f4d5e 2px;
-margin-bottom: 6px;
-}
-
 .recensione-hover {
   text-align: center;
   transition: all 0.3s ease; 
@@ -53,14 +48,17 @@ margin-bottom: 6px;
   border-radius: 10px;
   transition: all 0.3s ease;
   min-height: 550px;
+  border-right: solid #fe7f4d5e 2px;
+  margin-bottom: 6px;
 }
 
-.profile-img {
+.profile-img{
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 10%;
   margin-bottom: 15px;
+  align-self: center;
 }
 
 .toggle-btn {
