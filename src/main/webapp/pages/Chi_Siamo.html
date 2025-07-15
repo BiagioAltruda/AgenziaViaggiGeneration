@@ -181,62 +181,85 @@ Ma attenzione: ogni viaggio è un’avventura. <strong> sai mai dove finisci..</
 <div class="container text-center">
   <div class="row">
     <!-- COLONNA CARMEN -->
-    <div class="col-md-3 descrizione" data-founder="carmen" data-original-img="../img/Carmen-serious.jpg">   
+    <div class="col-md-3 descrizione">   
       <h2>Carmen Della Bruna</h2>
-      <img src="../img/Carmen-serious.jpg" class="profile-img" alt="Carmen" width="200">
-      <p class="quote" data-original="Specializzata in marketing digitale e gestione dei social media con un approccio creativo e strategico.">
+      <img src="../img/Carmen-serious.jpg" class="profile-img personalCard" style="display: block;" alt="Carmen" width="200">
+      <img src="../img/Carmen.png" class="profile-img personalCard" style="display: none;" alt="Carmen" width="200">
+      <p class="quote personalCard">
         <strong>Specializzata in marketing digitale e gestione dei social media con un approccio creativo e strategico.</strong>
       </p>
-      <p class="description" data-original="Carmen, laureata in Comunicazione, ha maturato esperienza nella creazione di contenuti virali e nella gestione della brand identity. Con un occhio attento alle tendenze del mercato, sviluppa strategie di engagement innovative per connettersi con il pubblico target.">
+      <p class="quotepersonalCard" style="display: none;">“Vuoi un 30enne sano, stabile e sereno? Vai in chiesa. Io ti porto quelli col fascino tossico e le emozioni represse.”</p>
+      <p class="description personalCard">
         Carmen, laureata in Comunicazione, ha maturato esperienza nella creazione di contenuti virali e nella gestione della brand identity. Con un occhio attento alle tendenze del mercato, sviluppa strategie di engagement innovative per connettersi con il pubblico target.
       </p>
-      <button class="toggle-btn">La verità</button>
+      <p class="description personalCard" style="display: none;"> Carmen, 20 anni, passione per i 30enni con lo sguardo perso, tatuaggi e almeno una denuncia alle spalle... <strong>“Io li trovo, voi li prendete.</strong> 🛒 Spaccia trentenni selezionati, garantiti, con trauma incluso. 📦 Consegna rapida, minimo 2 notti in galera, massimo 1 ex tossica. </p>
+      <button class="toggle-btn" onclick="switchCard()">La verità</button>
     </div>
 
     <!-- COLONNA VALERIO -->
-    <div class="col-md-3 descrizione" data-founder="valerio" data-original-img="../img/Valerio-serious.jpg">    
+    <div class="col-md-3 descrizione">    
       <h2>Valerio Piccolo</h2>
-      <img src="../img/Valerio-serious.jpg" class="profile-img" alt="Valerio" width="200">
-      <p class="quote" data-original="Esperto in Sviluppo Software e Architetture Cloud">
+      <img src="../img/Valerio-serious.jpg" class="profile-img personalCard" alt="Valerio" width="200">
+      <img src="../img/Valerio.png" class="profile-img personalCard" style="display: none;" alt="Valerio" width="200">
+      <p class="quote personalCard">
         <strong>"Esperto in Sviluppo Software e Architetture Cloud"</strong>
       </p>
-      <div class="description" data-original="Valerio, ingegnere informatico specializzato in sistemi distribuiti e cloud-native architecture. Con 5+ anni di esperienza in multinazionali tech, ha maturato competenze avanzate in ottimizzazione algoritmica e microservizi. Appassionato di cybersecurity e intelligenza artificiale, unisce precisione tecnica a solide capacità di problem solving">
+      <p class="quote personalCard" style="display: none;">
+        <strong>“Cervello: spento. Controller: acceso. Emozioni: non pervenute. Ma hey, almeno sa vincere su FIFA.”</strong>
+      </p>
+      <div class="description personalCard">
         <p>Valerio, ingegnere informatico specializzato in sistemi distribuiti e cloud-native architecture. Con 5+ anni di esperienza in multinazionali tech, ha maturato competenze avanzate in ottimizzazione algoritmica e microservizi. Appassionato di cybersecurity e intelligenza artificiale, unisce precisione tecnica a solide capacità di problem solving</p>
       </div>
-      <button class="toggle-btn">La verità</button>
+      <div class="description personalCard" style="display: none;">
+        <p>Valerio/Darkless, 23 anni, cervello in modalità riposo dal 2005. Generalmente dice due cose: <br> <strong>TENG SUONN o DEVO ANDARE IN BAGNO</strong> <br> Ti troverà i migliori alberghi con bagni di lusso, o almeno che non si ottura!"</p>
+      </div>
     </div>
 
     <!-- COLONNA JO -->
-    <div class="col-md-3 descrizione" data-founder="jo" data-original-img="../img/LeMeMedesimo.png">   
+    <div class="col-md-3 descrizione">
       <h2>Giuseppe Francione</h2>
-      <img src="../img/LeMeMedesimo.png" class="profile-img" alt="Giuseppe" width="200">
-      <p class="quote" data-original="“No raga, non è erotico, è simbolico. Rappresenta la vulnerabilità dell'anima in un mondo postmoderno.” (Traduzione: aveva voglia di disegnare le tette.)">
+      <img src="../img/Jo-serious.jpg" class="profile-img personalCard"" alt="Giuseppe" width="200">
+      <img src="../img/LeMeMedesimo.png" class="profile-img personalCard" style="display: none;"" alt="Giuseppe" width="200">
+      
+      <p class="quote personalCard">
+        <strong>Creative Director & Visual Designer</strong>
+      </p>
+      <p class="quote personalCard" style="display: none;">
         <strong>“No raga, non è erotico, è simbolico. Rappresenta la vulnerabilità dell'anima in un mondo postmoderno.” (Traduzione: aveva voglia di disegnare le tette.)</strong>
       </p>
-      <div class="description" data-original="Lui: grafico, illustratore, artista... ma il 99% delle sue opere sono donne mezze nude che guardano nel vuoto in ambienti surreali. Hobby preferito? Dire &quot;Carmen statt zitt&quot;. È il migliore a creare pacchetti viaggio e non dire il contrario, sinò... ACCIRT!">
+      <div class="description personalCard">
+       <p> Illustratore e graphic designer specializzato in branding e visual storytelling. Con un portfolio che spazia dall'editoria alla digital art, combina tecniche tradizionali con tools digitali avanzati. Esperto in Adobe Creative Suite e UI/UX design, trasforma concetti complessi in narrazioni visive efficaci."</p>
+      </div>
+      <div class="description personalCard" style="display: none;">
         <p>Lui: grafico, illustratore, artista... ma il 99% delle sue opere sono donne mezze nude che guardano nel vuoto in ambienti surreali.</p>
         <p>Hobby preferito? Dire: <strong>"Carmen statt zitt"</strong></p>
         <p>È il migliore a creare pacchetti viaggio e non dire il contrario, sinò...</p>
         <p><strong>ACCIRT!</strong></p>
       </div>
-      <button class="toggle-btn">La verità</button>
     </div>
 
     <!-- COLONNA BIAGIO -->
-    <div class="col-md-3 descrizione" data-founder="biagio" data-original-img="../img/Biagio.png">   
-      <h2>Biagio Altruda</h2>
-      <img src="../img/Biagio.png" class="profile-img" alt="Biagio" width="200">
-      <p class="quote" data-original="L'amico, psicologo non laureato, ascoltatore professionista di drammi sentimentali riciclati.">
+    <div class="col-md-3 descrizione">   
+      <h2>Biagio Altruda Mastrorilli</h2>
+      <img src="../img/Biagio-serious.png" class="profile-img personalCard" alt="Biagio" width="200">
+      <img src="../img/Biagio.png" class="profile-img personalCard" style="display: none;" alt="Biagio" width="200">
+      <p class="quote personalCard">
+        <strong>IT Consultant & Cybersecurity Specialist.</strong>
+      </p>
+      <p class="quote personalCard" style="display: none;">
         <strong>L'amico, psicologo non laureato, ascoltatore professionista di drammi sentimentali riciclati.</strong>
       </p>
-      <div class="description" data-original="Biagio, 23 anni, con l'informatica che scorre nelle vene. Vuoi una risposta? Chiedi a BIAGPT! però ricorda che nel dubbio ti dirà sempre BLOCCA E SEGNALA! Giocatore incallito di Picchiaduro, che sia Tekken o Street Fighter sta attento IL TUO CULO NON RESTERÀ INTATTO">
+      <div class="description personalCard">
+        <p>
+         Consulente tecnologico con certificazioni in cybersecurity e infrastrutture critiche. Specializzato in penetration testing e governance dei dati, aiuta aziende a proteggere i loro asset digitali. Esperto di machine learning applicato alla sicurezza informatica e sistemi di autenticazione avanzata. </p>
+      </div>
+      <div class="description personalCard" style="display: none;">
         <p>Biagio, 23 anni, con l'informatica che scorre nelle vene. Vuoi una risposta? Chiedi a <strong>BIAGPT</strong>!</p>
         <p>però ricorda che nel dubbio ti dirà sempre</p>
         <p><strong>BLOCCA E SEGNALA!</strong></p>
         <p>Giocatore incallito di Picchiaduro, che sia Tekken o Street Fighter sta attento</p>
         <p><strong>IL TUO CULO NON RESTERÀ INTATTO</strong></p>
       </div>
-      <button class="toggle-btn">La verità</button>
     </div>
   </div>
 </div>
@@ -256,48 +279,17 @@ Ma attenzione: ogni viaggio è un’avventura. <strong> sai mai dove finisci..</
 </div>
 
 <script>
-const seriousContents = {
-  carmen: {
-    img: "../img/Carmen.png",
-    quote: "“Vuoi un 30enne sano, stabile e sereno? Vai in chiesa. Io ti porto quelli col fascino tossico e le emozioni represse.”",
-    desc: "Carmen, 20 anni, passione per i 30enni con lo sguardo perso, tatuaggi e almeno una denuncia alle spalle... <strong>“Io li trovo, voi li prendete.</strong> 🛒 Spaccia trentenni selezionati, garantiti, con trauma incluso. 📦 Consegna rapida, minimo 2 notti in galera, massimo 1 ex tossica."
-  },
-  valerio: {
-    img: "../img/Valerio.png",
-    quote: "“Cervello: spento. Controller: acceso. Emozioni: non pervenute. Ma hey, almeno sa vincere su FIFA.”",
-    desc: "Valerio/Darkless, 23 anni, cervello in modalità riposo dal 2005. Generalmente dice due cose: <br> <strong>TENG SUONN o DEVO ANDARE IN BAGNO</strong> <br> Ti troverà i migliori alberghi con bagni di lusso, o almeno che non si ottura!"
-  },
-  jo: {
-    img: "../img/Jo-serious.jpg",
-    quote: "Creative Director & Visual Designer",
-    desc: "Illustratore e graphic designer specializzato in branding e visual storytelling. Con un portfolio che spazia dall'editoria alla digital art, combina tecniche tradizionali con tools digitali avanzati. Esperto in Adobe Creative Suite e UI/UX design, trasforma concetti complessi in narrazioni visive efficaci."
-  },
-  biagio: {
-    img: "../img/Biagio-serious.jpg",
-    quote: "IT Consultant & Cybersecurity Specialist",
-    desc: "Consulente tecnologico con certificazioni in cybersecurity e infrastrutture critiche. Specializzato in penetration testing e governance dei dati, aiuta aziende a proteggere i loro asset digitali. Esperto di machine learning applicato alla sicurezza informatica e sistemi di autenticazione avanzata."
-  }
-};
+  function switchCard(){
+    let cards = document.getElementsByClassName("personalCard")
 
-// INIZIALIZZAZIONE TOGGLE BUTTONS
-document.querySelectorAll('.descrizione').forEach(col => {
-  const btn = col.querySelector('.toggle-btn');
-  
-  btn.addEventListener('click', () => {
-    const founder = col.dataset.founder;
-    const isSeriousMode = btn.textContent === "La verità";
-    
-    // CAMBIO IMMAGINE
-    col.querySelector('.profile-img').src = isSeriousMode ? seriousContents[founder].img : col.dataset.originalImg;
-    
-    // CAMBIO TESTO
-    col.querySelector('.quote strong').textContent = isSeriousMode ? seriousContents[founder].quote : col.querySelector('.quote').dataset.original;
-    col.querySelector('.description').innerHTML = isSeriousMode ? seriousContents[founder].desc : col.querySelector('.description').dataset.original;
-    
-    // CAMBIO TESTO BOTTONE
-    btn.textContent = isSeriousMode ? "Non meme" : "La verità";
-  });
-});
+    for (x=0; x<cards.length; x++){
+      const displayState = cards[x].style.display;
+      if(cards[x].style.display == 'none')
+        cards[x].style.display='block'
+      else
+        cards[x].style.display='none'
+    }
+  }
 </script>
 
 
