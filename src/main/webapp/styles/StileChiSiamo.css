@@ -26,11 +26,6 @@
    margin-bottom: 50px;
 }
 
-.descrizione{
-  border-right: solid #fe7f4d5e 2px;
-margin-bottom: 6px;
-}
-
 .recensione-hover {
   text-align: center;
   transition: all 0.3s ease; 
@@ -45,4 +40,43 @@ margin-bottom: 6px;
   box-shadow: 0 4px 8px rgba(254, 126, 77, 0.2); 
   transform: translateY(-3px); 
   cursor: pointer; 
+}
+
+.descrizione {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  min-height: 550px;
+  border-right: solid #fe7f4d5e 2px;
+  margin-bottom: 6px;
+}
+
+.profile-img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-bottom: 15px;
+  align-self: center;
+}
+
+.toggle-btn {
+  background-color: #fe7f4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #e06b3a;
+  transform: translateY(-2px);
+}
+
+.text-justify {
+  text-align: justify;
 }
