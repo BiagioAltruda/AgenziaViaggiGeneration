@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../styles/homeStyleSheet.css" />
+    <link rel="stylesheet" id="theme" href="/styles/lightTheme.css">
     <title>Insert title here</title>
   </head>
 
@@ -62,6 +63,9 @@
             <li class="nav-item">
               <a class="nav-link" href="Contatti.html">Contatti</a>
             </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-dark" id="themeSelector" onclick="changeTheme()">tema</button>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -75,8 +79,18 @@
         </div>
       </div>
     </nav>
-    <body>
-      <main>
+    <!--THEME CHANGER SCRIPT-->
+    <script>
+      function changeTheme(){
+        const currentTheme = document.getElementById("theme").getAttribute("href").toString();
+        if(currentTheme.includes("light")){
+          document.getElementById("theme").setAttribute("href", "/styles/darkTheme.css")
+        }
+        else{
+          document.getElementById("theme").setAttribute("href", "/styles/lightTheme.css")
+        }
+      }
+    </script>
     <!----------Stock Background Foto----------->
     <img src="../img/stock2.jpg" alt="" class="img-fluid" width="100%" />
     <br />
