@@ -66,7 +66,7 @@
             </li>
             <li class="nav-item">
               <button class="btn btn-outline-dark" id="themeSelector" onclick="changeTheme()">tema</button>
-              <script src="/script/themeChanger.js"></script>
+              <script src="../script/themeChanger.js"></script>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -89,7 +89,7 @@
 
     <div class="container-fluid">
       <div class="row divider rounded">
-        <div class="col-7">
+        <div class="col-sm-12 col-lg-7">
           <div
             id="carouselExampleAutoplaying"
             class="carousel slide"
@@ -134,20 +134,23 @@
           </div>
         </div>
         <!----------Descrizione e call to action----------->
-        <div class="col-4 text-1">
+        <div class="col-sm-12 col-lg-5 text-1">
           <div id="carouselSideText" class="container-fluid position-relative justify-content-center">
             <h1 style="font-size: 40px;">Prenota la vacanza dei tuoi sogni!</h2>
             <br />
             <p style="font-weight: bold">È tempo di tornare a viaggiare!</p>
             <br />
             <!----------Pulsante----------->
-            <button
+            <div class="mt-auto text-center">
+              <button
               type="button"
               class="btn btn-primary position-absolute"
               style="translate: 80px 20px"
             >
               Primary
             </button>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -155,13 +158,13 @@
 
     <!----------Carte Destinazioni----------->
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row d-flex justify-content-center">
-        <div class="col-4 col-sm-12 col-md-6 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Londra</h1> <br>
               Londra chiama, pioggia garantita. <br>
@@ -170,17 +173,17 @@
                 <li><p> Costo: 1.250€</p></li>
                 <li><p>Data: 15 Ottobre 2024</p></li>
               </ul>
-              <div class="d-flex justify-content-center">
+              <div class="mt-auto text-center">
                 <button type="button" class="btn btn-primary">Prenota Subito!</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione2.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Londra</h1> <br>
               Londra chiama, pioggia garantita. <br>
@@ -195,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione3.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
@@ -216,11 +219,11 @@
         </div>
       </div>
       <div class="row d-flex justify-content-center">
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione4.png" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Minturno</h1> <br>
               Splendida città per scappare alla calura estiva <br>
@@ -235,11 +238,11 @@
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione5.png" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Disneyland</h1> <br>
               Non è assolutamente per bambini <br>
@@ -254,7 +257,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione6.png" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
