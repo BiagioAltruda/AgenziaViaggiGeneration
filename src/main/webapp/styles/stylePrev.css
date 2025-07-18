@@ -1,0 +1,25 @@
+/* ------------------------------------------------
+   Nasconde tutti gli step del form wizard tranne 
+   quello con classe "active"
+   ------------------------------------------------ */
+.step {
+  display: none;  /* Nasconde lo step di default */
+}
+.step.active {
+  display: block; /* Mostra solo lo step attivo */
+}
+
+/* ------------------------------------------------
+   Classe applicata al body per il tema light/beige
+   ------------------------------------------------ */
+.neutral-1 {
+  background-color: #fff8dc;  /* Colore di sfondo chiaro (beige chiaro) */
+}
+
+/* ------------------------------------------------
+   Classe applicata alla navbar e altri elementi 
+   principali per il colore principale del tema
+   ------------------------------------------------ */
+.main-color-1 {
+  background-color: #f4a460;  /* Colore principale (sandy brown) */
+}
