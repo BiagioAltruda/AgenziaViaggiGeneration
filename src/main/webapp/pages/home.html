@@ -18,6 +18,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../styles/homeStyleSheet.css" />
+    <link rel="stylesheet" id="theme" href="/styles/lightTheme.css">
+
     <title>Insert title here</title>
   </head>
 
@@ -62,6 +64,10 @@
             <li class="nav-item">
               <a class="nav-link" href="Contatti.html">Contatti</a>
             </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-dark" id="themeSelector" onclick="changeTheme()">tema</button>
+              <script src="/script/themeChanger.js"></script>
+            </li>
           </ul>
           <form class="d-flex" role="search">
             <input
@@ -75,8 +81,6 @@
         </div>
       </div>
     </nav>
-    <body>
-      <main>
     <!----------Stock Background Foto----------->
     <img src="../img/stock2.jpg" alt="" class="img-fluid" width="100%" />
     <br />
