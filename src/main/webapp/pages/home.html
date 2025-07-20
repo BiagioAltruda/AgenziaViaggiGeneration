@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="../styles/homeStyleSheet.css" />
     <link rel="stylesheet" id="theme" href="../styles/lightTheme.css">
 <!-- JavaScript-->
-<scrip  src = "../script/scriptFooter.js"t></script>
+<script  src = "../script/scriptFooter.js"></script>
 
-    <title>Hone</title>
+    <title>Home</title>
 
     <!-- JS bootstrap-->
     <script
@@ -61,23 +61,24 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destinazioni</a>
+              <a class="nav-link" href="destinazioni.html">Destinazioni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Piani</a>
+              <a class="nav-link" href="Preventivatore.html">Piani</a>
             </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Offerte Lampo</a>
+              <a class="nav-link" href="Preventivatore.html">Offerte Lampo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Contatti.html">Contatti</a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-outline-dark" id="themeSelector" onclick="changeTheme()">tema</button>
-              <script src="../script/themeChanger.js"></script>
+              <a class="nav-link" href="Preventivatore.html">Prenota Ora!</a>
             </li>
           </ul>
+          <i class="fa-solid fa-circle-half-stroke" id="themeSelector" style="margin-right: 1%; background-image: url(/img/Logo_StoViaggio_PNG.png);" onclick="changeTheme()"></i>
+              <script src="../script/themeChanger.js"></script>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -98,7 +99,7 @@
 
     <div class="container-fluid">
       <div class="row divider rounded">
-        <div class="col-7">
+        <div class="col-sm-12 col-lg-7">
           <div
             id="carouselExampleAutoplaying"
             class="carousel slide"
@@ -143,20 +144,18 @@
           </div>
         </div>
         <!----------Descrizione e call to action----------->
-        <div class="col-4 text-1">
+        <div class="col-sm-12 col-lg-5 text-1">
           <div id="carouselSideText" class="container-fluid position-relative justify-content-center">
             <h1 style="font-size: 40px;">Prenota la vacanza dei tuoi sogni!</h2>
             <br />
             <p style="font-weight: bold">È tempo di tornare a viaggiare!</p>
             <br />
             <!----------Pulsante----------->
-            <button
-              type="button"
-              class="btn btn-primary position-absolute"
-              style="translate: 80px 20px"
-            >
-              Primary
-            </button>
+            <form action="Preventivatore.html">
+                  <input type="submit" class="btn mt-auto text-center" style="background-color: #0d6efd;" value="Prenota Subito!">
+                </form>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -164,13 +163,13 @@
 
     <!----------Carte Destinazioni----------->
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row d-flex justify-content-center">
-        <div class="col-4 col-sm-12 col-md-6 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione1.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Londra</h1> <br>
               Londra chiama, pioggia garantita. <br>
@@ -179,17 +178,19 @@
                 <li><p> Costo: 1.250€</p></li>
                 <li><p>Data: 15 Ottobre 2024</p></li>
               </ul>
-              <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+              <div class="mt-auto text-center">
+                <form action="Preventivatore.html">
+                  <input type="submit" class="btn" style="background-color: #0d6efd;" value="Prenota Subito!">
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione2.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Berlino</h1> <br>
               Londra chiama, pioggia garantita. <br>
@@ -199,12 +200,14 @@
                 <li><p>Data: 15 Ottobre 2025</p></li>
               </ul>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+                <form action="Preventivatore.html">
+                  <input type="submit" class="btn" style="background-color: #0d6efd;" value="Prenota Subito!">
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione3.jpg" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
@@ -218,18 +221,20 @@
                 <li><p>Data: 02 Agosto 2025</p></li>
               </ul>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+                <form action="Preventivatore.html">
+                  <input type="submit" class="btn" style="background-color: #0d6efd;" value="Prenota Subito!">
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row d-flex justify-content-center">
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione4.png" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Minturno</h1> <br>
               Splendida città per scappare alla calura estiva <br>
@@ -239,16 +244,18 @@
                 <li><p>Data: Quando ti pare, tanto ci vai solo tu</p></li>
               </ul>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+                <form action="Preventivatore.html">
+                  <input type="submit" class="btn" style="background-color: #0d6efd;" value="Prenota Subito!">
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione5.png" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <div class="card-text">
               <h3> Disneyland</h1> <br>
               Non è assolutamente per bambini <br>
@@ -258,12 +265,14 @@
                 <li><p>Data: 15 Ottobre 2025</p></li>
               </ul>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+                <form action="Preventivatore.html">
+                  <input type="submit" class="btn" style="background-color: #0d6efd;" value="Prenota Subito!">
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 card-container">
+        <div class="col-12 col-lg-3 card-container">
           <div class="card">
               <img src="../img/destinazione6.png" class="card-img-top" style="width: 100%; height: auto; display: block;" alt="..." />
           </div>
@@ -277,7 +286,9 @@
                 <li><p>Data: 5 Aprile 2025</p></li>
               </ul>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">Prenota Subito!</button>
+                <form action="Preventivatore.html">
+                  <input type="submit" class="btn" style="background-color: #0d6efd;" value="Prenota Subito!">
+                </form>
               </div>
             </div>
           </div>
@@ -335,16 +346,18 @@
 
         <!-- Campo email -->
         <div class="col-12 col-md-5 mb-3 mb-md-0">
-          <input type="email" class="form-control" placeholder="Indirizzo E-mail" required />
+          <input id="email" type="email" class="form-control" placeholder="Indirizzo E-mail" required />
         </div>
 
         <!-- Bottone -->
         <div class="col-12 col-md-auto text-center text-md-start">
-          <button type="submit" class="btn btn-outline-dark">
-            <button type="submit" class="btn btn-outline-dark" onclick="emailSent()">
+            <button type="button" class="btn btn-outline-dark" onclick="emailSent()">
             <script> function emailSent(){
-
-              alert("Iscrizione alla newsletter avvenuto");
+              const email = document.getElementById("email").value.trim();
+              let alertMsg = ''
+              alertMsg = (!(email===null || email === undefined || email=== ''))
+              ? 'Email registrata con successo!' : 'Il campo non può essere vuoto'
+              alert(alertMsg);
             }
             </script>
             Iscriviti
