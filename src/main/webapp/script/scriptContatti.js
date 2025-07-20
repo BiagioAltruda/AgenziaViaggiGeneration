@@ -1,3 +1,5 @@
+
+window.addEventListener("DOMContentLoaded", function () {
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     // Blocca l'invio
     e.preventDefault();
@@ -33,3 +35,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     alert("Messaggio inviato con successo!");
     // this.submit(); ← Se vuoi davvero inviarlo a un server
   });
+  });
+
+ 
