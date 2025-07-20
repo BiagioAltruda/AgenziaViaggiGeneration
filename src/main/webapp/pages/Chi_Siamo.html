@@ -20,7 +20,17 @@
     />
     <link rel="stylesheet" href="../styles/StileChiSiamo.css" />
     <link rel="stylesheet" href="../styles/homeStyleSheet.css" />
+    <!-- JavaScript-->
+<scrip  src = "../script/scriptFooter.js"t></script>
+
     <title>Insert title here</title>
+
+    <!-- JS bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body class="neutral-1">
@@ -431,6 +441,12 @@ L’adrenalina c’era, sì. Specialmente quando è calata la notte.<br>
         <!-- Bottone -->
         <div class="col-12 col-md-auto text-center text-md-start">
           <button type="submit" class="btn btn-outline-dark">
+            <button type="submit" class="btn btn-outline-dark" onclick="emailSent()">
+            <script> function emailSent(){
+
+              alert("Iscrizione alla newsletter avvenuto");
+            }
+            </script>
             Iscriviti
           </button>
         </div>
