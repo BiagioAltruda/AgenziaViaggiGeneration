@@ -390,7 +390,7 @@ L’adrenalina c’era, sì. Specialmente quando è calata la notte.<br>
 </div>
 </div>
 
-<!-- Footer -->
+ <!-- Footer -->
 <footer class="main-color-1 text-center">
   <!-- Grid container -->
   <div class="container p-4">
@@ -440,16 +440,18 @@ L’adrenalina c’era, sì. Specialmente quando è calata la notte.<br>
 
         <!-- Campo email -->
         <div class="col-12 col-md-5 mb-3 mb-md-0">
-          <input type="email" class="form-control" placeholder="Indirizzo E-mail" required />
+          <input id="email2" type="email" class="form-control" placeholder="Indirizzo E-mail" required />
         </div>
 
         <!-- Bottone -->
         <div class="col-12 col-md-auto text-center text-md-start">
-          <button type="submit" class="btn btn-outline-dark">
-            <button type="submit" class="btn btn-outline-dark" onclick="emailSent()">
+            <button type="button" class="btn btn-outline-dark" onclick="emailSent()">
             <script> function emailSent(){
-
-              alert("Iscrizione alla newsletter avvenuto");
+              const email = document.getElementById("email2").value.trim();
+              let alertMsg = ''
+              alertMsg = (!(email===null || email === undefined || email=== ''))
+              ? 'Email registrata con successo!' : 'Il campo non può essere vuoto'
+              alert(alertMsg);
             }
             </script>
             Iscriviti
@@ -509,7 +511,6 @@ L’adrenalina c’era, sì. Specialmente quando è calata la notte.<br>
   </div>
   <!-- Copyright -->
 </footer>
-<!-- Footer -->
 
     </body>
 </html>
