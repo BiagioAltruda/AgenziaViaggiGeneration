@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/homeStyleSheet.css" />
-   <link rel="stylesheet"  href="..\styles\destinazionestyle.css"/>
+   <link rel="stylesheet"  href="../styles/destinazionestyle.css"/>
     <link rel="stylesheet" id="theme" href="../styles/lightTheme.css">
    <!-- JavaScript-->
 <scrip  src = "../script/scriptFooter.js"t></script>
@@ -92,7 +92,7 @@
       </div>
     </nav>
 
-     <!--MOLLICHINA-->
+     <!--Breadcrumb-->
 <nav aria-label="breadcrumb" class="barraBreadcrumb">
   <ol class="breadcrumb"> 
     <li class="breadcrumb-item"><a href="home.html">Home</a></li>
@@ -101,45 +101,92 @@
 </nav>
 
 <!--sezione iniziale con immagine-->
-<section lala="px-4 mb-5 mb-lg-5 pt-lg-5">
-    <h2 lala="satisfy blue-ipv font-weight-light text-center">Viviti il mondo!</h2>
-    <h2 lala="poppins text-center">Destinazioni di viaggio</h2>
-   <img src = "../img/Destinazione.jpg" width="1000"
-   <p lala=""></p>
+   <img src = "../img/Destinazione.jpg" width="100%" class="img-fluid" style="margin-top: 55px;"></p>
+   <section lala="px-4 mb-5 mb-lg-5 pt-lg-5">
+    <h2 style="font-size: 50px; text-align: center;">Viviti il mondo!</h2>
+    <h2 style="text-align: center;">Destinazioni di viaggio</h2>
 </section>
 
 <!--barra di ricerca-->
-<p>Inserisci la destinazione che ti interessa e inizia con noi il tuo viaggio!</p>
+<p style="text-align: center;">Inserisci la destinazione che ti interessa e inizia con noi il tuo viaggio!</p>
 <form class="d-flex" role="search">
   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-dark" type="submit">Search</button>
         </form>
 
 <!--Inizio pag-->
-     <div class="container">
-      <div class="row d-flex card-container">
-        <div class="col-6">
-          <!--Prima Immagine-->
-          <img src="/img/londra1.jpg" alt="">
-        </div>
-        <div class="col-6">
-          <!--Immagini laterali-->
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 card-container">
-              <img src="/img/londra2.jpg" alt="">
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12">
-              <img src="/img/londra3.jpg" alt="">
-            </div>
-          </div>
-        </div>
+     <div class="container text-center" style="border-top: solid #fe7f4d5e 2px; margin-top: 20px;">
+  <div class="row align-items-center" style="margin-top: 30px; margin-bottom: 30px;">
+    <div class="col-md-4">
+      <img src="../img/Destinazione_Piccola.jpeg" width="500px" class="img-fluid profile-img;" style="border-radius: 10%;">
+    </div>
+    <div class="col-md-8">
+      <h2>Le migliori destinazioni per viaggiare!</h2>
+      <p class="text-justify"> <strong> Pirati! Non avete ancora deciso la vostra prossima meta?</strong> <br>
+Allora lasciatevi ispirare dalle destinazioni più amate da altri Pirati come voi!
+Cliccate sulle immagini o sui link e iniziate a fantasticare, e se vi conquistano cercate le offerte più vantaggiose!
+Oppure, se sapete già quando partire ma non dove, consultate il nostro calendario di viaggio per trovare le mete perfette in ogni periodo dell’anno!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Carte con le destinazioni -->
+<div class="destinations-container" style="margin-bottom: 30px;">
+  <div class="destination-card">
+    <a href="Preventivatore.html" class="card-link">
+      <div class="card-image-wrapper">
+        <img src="../img/Italia.jpg" alt="Italia" class="card-image">
+        <div class="card-title">Italia</div>
       </div>
-     </div>
+      <div class="card-description">
+        <p>Magiche esperienze tra natura, cultura e buona cucina</p>
+      </div>
+    </a>
+  </div>
+  <div class="destination-card">
+    <a href="Preventivatore.html" class="card-link">
+      <div class="card-image-wrapper">
+        <img src="../img/Olanda.jpg" alt="Olanda" class="card-image">
+        <div class="card-title">Olanda</div>
+      </div>
+      <div class="card-description">
+        <p>Tra mulini, musei e architetture contemporanee</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="destinations-container" style="margin-bottom: 30px;">
+  <div class="destination-card">
+    <a href="Preventivatore.html" class="card-link">
+      <div class="card-image-wrapper">
+        <img src="../img/Spagna.jpg" alt="Spagna" class="card-image">
+        <div class="card-title">Spagna</div>
+      </div>
+      <div class="card-description">
+        <p>Tra matador e corride non resterai deluso, Vamos Amigos</p>
+      </div>
+    </a>
+  </div>
+  <div class="destination-card">
+    <a href="Preventivatore.html" class="card-link">
+      <div class="card-image-wrapper">
+        <img src="../img/Burundi.jpg" alt="Burundi" class="card-image">
+        <div class="card-title">Burundi</div>
+      </div>
+      <div class="card-description">
+        <p>Isolato e appartato, luogo adatto dove portarci la persona che vuoi lasciare</p>
+      </div>
+    </a>
+  </div>
+</div>
 
 
-    <br>
+
+
+
+
+
     <!-- Footer -->
 <footer class="main-color-1 text-center">
   <!-- Grid container -->
