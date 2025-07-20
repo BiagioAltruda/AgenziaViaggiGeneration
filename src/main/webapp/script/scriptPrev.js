@@ -2,10 +2,13 @@
 
 // Mappa dei costi base per ogni destinazione
 const costMap = {
-  'Parigi': 300,   // Costo base per Parigi
-  'Roma':   100,   // Costo base per Roma
-  'Madrid': 200,   // Costo base per Madrid
-  'Bangkok':250    // Costo base per Bangkok
+  'Londra': 300,   // Costo base per Parigi
+  'Berlino':   100,   // Costo base per Roma
+  'Atene': 200,   // Costo base per Madrid
+  'Minturno':70,   // Costo base per Bangkok
+  'Disneyland' :350,
+  'Trezzo sull Adda' : 50,
+  'Burundi' :100
 };
 
 // Indice dell'attuale step (parte da 0 = primo step)

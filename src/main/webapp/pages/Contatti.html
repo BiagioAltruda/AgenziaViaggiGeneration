@@ -71,23 +71,24 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destinazioni</a>
+              <a class="nav-link" href="destinazioni.html">Destinazioni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Piani</a>
+              <a class="nav-link" href="Preventivatore.html">Piani</a>
             </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Offerte Lampo</a>
+              <a class="nav-link" href="Preventivatore.html">Offerte Lampo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Contatti.html">Contatti</a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-outline-dark" id="themeSelector" onclick="changeTheme()">tema</button>
-              <script src="../script/themeChanger.js"></script>
+              <a class="nav-link" href="Preventivatore.html">Prenota Ora!</a>
             </li>
           </ul>
+          <i class="fa-solid fa-circle-half-stroke" id="themeSelector" style="margin-right: 1%; background-image: url(/img/Logo_StoViaggio_PNG.png);" onclick="changeTheme()"></i>
+              <script src="../script/themeChanger.js"></script>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -114,7 +115,7 @@
 
     <!-- LOGO CENTRATO -->
     <div class="alineareCentro">
-      <img src="logo" alt="Logo STO VIAGGIO" />
+      <img src="../img/Logo_StoViaggio_PNG.png" alt="Logo STO VIAGGIO" width="250px"/>
     </div>
 
     <!-- SEZIONE CONTATTI e FORM -->
@@ -172,7 +173,7 @@
   </div>
 </div>
 <br>
-    <!-- Footer -->
+   <!-- Footer -->
 <footer class="main-color-1 text-center">
   <!-- Grid container -->
   <div class="container p-4">
@@ -222,15 +223,18 @@
 
         <!-- Campo email -->
         <div class="col-12 col-md-5 mb-3 mb-md-0">
-          <input type="email" class="form-control" placeholder="Indirizzo E-mail" required />
+          <input id="email2" type="email" class="form-control" placeholder="Indirizzo E-mail" required />
         </div>
 
         <!-- Bottone -->
         <div class="col-12 col-md-auto text-center text-md-start">
-          <button type="submit" class="btn btn-outline-dark" onclick="emailSent()">
+            <button type="button" class="btn btn-outline-dark" onclick="emailSent()">
             <script> function emailSent(){
-
-              alert("Iscrizione alla newsletter avvenuto");
+              const email = document.getElementById("email2").value.trim();
+              let alertMsg = ''
+              alertMsg = (!(email===null || email === undefined || email=== ''))
+              ? 'Email registrata con successo!' : 'Il campo non può essere vuoto'
+              alert(alertMsg);
             }
             </script>
             Iscriviti
