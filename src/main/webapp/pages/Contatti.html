@@ -3,7 +3,7 @@
   <head>
 
     <!-- JavaScript-->
-<scrip  src = "../script/scriptContatti.js"t></script>
+<scrip  src = "../script/scriptFooter.js"t></script>
 
     <!-- Metadati base -->
     <meta charset="UTF-8" />
@@ -19,6 +19,7 @@
 
     <!-- Foglio di stile personalizzato -->
     <link rel="stylesheet" href="../styles/styleContatti.css"/>
+     <link rel="stylesheet" id="theme" href="../styles/lightTheme.css">
 
     <!-- Font Awesome (icone) -->
     <link
@@ -29,22 +30,23 @@
       referrerpolicy="no-referrer"
     />
   <!-- Titolo della pagina -->
-    <title>Preventivatore</title>
+    <title>Contatti</title>
+
   
-  </head>
-
-  <body class="neutral-1">
-
-    <!--
-        Bootstrap JS 
+      <!-- JS bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    -->
+  </head>
 
-   <!----------NAV BAR----------->
+  <body class="neutral-1">
+
+    
+  
+
+    <!----------NAV BAR----------->
     <nav class="navbar navbar-expand-lg main-color-1">
       <div class="container-fluid">
         <a class="navbar-brand" href="home.html">Home</a>
@@ -81,7 +83,7 @@
             </li>
             <li class="nav-item">
               <button class="btn btn-outline-dark" id="themeSelector" onclick="changeTheme()">tema</button>
-              <script src="/script/themeChanger.js"></script>
+              <script src="../script/themeChanger.js"></script>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -223,7 +225,12 @@
 
         <!-- Bottone -->
         <div class="col-12 col-md-auto text-center text-md-start">
-          <button type="submit" class="btn btn-outline-dark">
+          <button type="submit" class="btn btn-outline-dark" onclick="emailSent()">
+            <script> function emailSent(){
+
+              alert("Iscrizione alla newsletter avvenuto");
+            }
+            </script>
             Iscriviti
           </button>
         </div>
