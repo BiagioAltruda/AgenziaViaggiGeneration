@@ -237,16 +237,18 @@ Oppure, se sapete già quando partire ma non dove, consultate il nostro calendar
 
         <!-- Campo email -->
         <div class="col-12 col-md-5 mb-3 mb-md-0">
-          <input type="email" class="form-control" placeholder="Indirizzo E-mail" required />
+          <input id="email" type="email" class="form-control" placeholder="Indirizzo E-mail" required />
         </div>
 
         <!-- Bottone -->
         <div class="col-12 col-md-auto text-center text-md-start">
-          <button type="submit" class="btn btn-outline-dark">
-            <button type="submit" class="btn btn-outline-dark" onclick="emailSent()">
+            <button type="button" class="btn btn-outline-dark" onclick="emailSent()">
             <script> function emailSent(){
-
-              alert("Iscrizione alla newsletter avvenuto");
+              const email = document.getElementById("email").value.trim();
+              let alertMsg = ''
+              alertMsg = (!(email===null || email === undefined || email=== ''))
+              ? 'Email registrata con successo!' : 'Il campo non può essere vuoto'
+              alert(alertMsg);
             }
             </script>
             Iscriviti
@@ -306,6 +308,5 @@ Oppure, se sapete già quando partire ma non dove, consultate il nostro calendar
   </div>
   <!-- Copyright -->
 </footer>
-<!-- Footer -->
-    </body>
-    </html>
+  </body>
+</html>
