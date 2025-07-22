@@ -110,9 +110,11 @@
 
 <!--barra di ricerca-->
 <p style="text-align: center;">Inserisci la destinazione che ti interessa e inizia con noi il tuo viaggio!</p>
-<form class="d-flex" role="search">
-  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-dark" type="submit">Search</button>
+<form class="d-flex justify-content-center" role="search">
+  <div style="width: 200px;">
+  <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+  </div>
+      <button class="btn btn-outline-dark btn-sm" type="submit">Search</button>
         </form>
 
 <!--Inizio pag-->
@@ -188,17 +190,12 @@ Oppure, se sapete già quando partire ma non dove, consultate il nostro calendar
 
 
 
-    <!-- Footer -->
-<footer class="main-color-1 text-center">
-  <!-- Grid container -->
+   <!-- Footer -->
+<footer class="main-color-1 text-center text-lg-start">
   <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-      <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.facebook.com/" role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
+    <div class="row text-center text-md-start">
 
+<<<<<<< HEAD
       <!-- X -->
       <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://x.com/" role="button"
         ><i class="fab fa-x"></i
@@ -255,59 +252,63 @@ Oppure, se sapete già quando partire ma non dove, consultate il nostro calendar
             Iscriviti
           </button>
         </div>
+=======
+      <!-- Colonna 1: Contatti utili (ora a sinistra) -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Contatti utili</h5>
+        <ul class="list-unstyled">
+          <li><a class="text-body" href="Chi_Siamo.html">Chi siamo</a></li>
+          <li><a class="text-body" href="#!">Termini e condizioni</a></li>
+          <li><a class="text-body" href="#!">Privacy</a></li>
+          <li><a class="text-body" href="#!">Assistenza</a></li>
+        </ul>
+>>>>>>> 10b5b10c0bef7646ef88f86c951084f7dc7093b0
       </div>
-    </form>
-  </div>
-</section>
-    
 
-    <!-- Section: Text -->
-    <section class="mb-4">
-      <p>
-       Viaggi tutto l'anno! Iscriviti alla nostra newsletter, 
-       riceverete regolarmente le nostre offerte speciali, 
-       le ultime novità sulle destinazioni e le attività da non perdere in giro per il mondo.
-      </p>
-    </section>
-    <!-- Section: Text -->
-
-   <!-- Section: Links -->
-<section class="py-4">
-  <div class="container text-center">
-  <!--Grid row-->
-  <div class="row justify-content-center">
-    <!--Grid column UNICA-->
-    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-      <h5 class="text-uppercase">Contatti utili</h5>
-
-      <ul class="list-unstyled mb-0">
-        <li>
-          <a class="text-body" href="Chi_Siamo.html">Chi siamo</a>
-        </li>
-        <li>
-          <a class="text-body" href="#!">Termini e condizioni</a>
-        </li>
-        <li>
-          <a class="text-body" href="#!">Privacy</a>
-        </li>
-        <li>
-          <a class="text-body" href="#!">Assistenza</a>
-        </li>
-      </ul>
+      <!-- Colonna 2: Newsletter -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Newsletter</h5>
+        <form action="#">
+          <div class="mb-3">
+            <input id="email" type="email" class="form-control" placeholder="Indirizzo E-mail" required />
+          </div>
+          <button type="button" class="btn btn-outline-dark" onclick="emailSent()">Iscriviti</button>
+        </form>
+        <script>
+          function emailSent(){
+            const email = document.getElementById("email").value.trim();
+            let alertMsg = (email !== '') ? 'Email registrata con successo!' : 'Il campo non può essere vuoto';
+            alert(alertMsg);
+          }
+        </script>
       </div>
+
+      <!-- Colonna 3: Social media (ora a destra) -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Seguici</h5>
+        <section class="mb-4">
+          <a class="btn btn-outline btn-floating m-1" href="https://www.facebook.com/" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline btn-floating m-1" href="https://x.com/" role="button"><i class="fab fa-x"></i></a>
+          <a class="btn btn-outline btn-floating m-1" href="https://www.google.it/?hl=it" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline btn-floating m-1" href="https://www.instagram.com/" role="button"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline btn-floating m-1" href="https://it.linkedin.com/" role="button"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-outline btn-floating m-1" href="https://github.com/BiagioAltruda/AgenziaViaggiGeneration.git" role="button"><i class="fab fa-github"></i></a>
+        </section>
+      </div>
+
     </div>
-    <!-- Fine colonna -->
   </div>
-  <!-- Fine row -->
-</section>
-<!-- Fine sezione Links -->
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2025 Copyright:
     <a class="text-reset fw-bold" href="#">stoviaggio.com</a>
   </div>
-  <!-- Copyright -->
 </footer>
+<<<<<<< HEAD
   </body>
 </html>
+=======
+    </body>
+    </html>
+>>>>>>> 10b5b10c0bef7646ef88f86c951084f7dc7093b0

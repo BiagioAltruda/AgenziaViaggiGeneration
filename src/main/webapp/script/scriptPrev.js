@@ -1,4 +1,4 @@
-// ==== scriptPrev.js: Form Wizard Logic with Inline Comments ==== 
+
 
 // Mappa dei costi base per ogni destinazione
 const costMap = {
