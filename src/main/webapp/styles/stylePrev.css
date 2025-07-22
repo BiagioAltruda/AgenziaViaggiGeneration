@@ -23,3 +23,9 @@
 .main-color-1 {
   background-color: #f4a460;  /* Colore principale (sandy brown) */
 }
+
+.barraBreadcrumb{
+  position: absolute;    
+  left: 175px; 
+  top: 70px;     
+}
