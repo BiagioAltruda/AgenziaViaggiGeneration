@@ -12,6 +12,13 @@ iframe{
     text-align: center;
     margin-top: 20px;
 } 
+
+.barraBreadcrumb{
+  position: absolute;    
+  left: 175px; 
+  top: 70px;     
+}
+
 /* Icone visivamente più grandi e distanziate */
 
 .dimensioneImaginiTesto p {
