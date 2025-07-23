@@ -47,7 +47,7 @@
   padding: 20px;
   border-radius: 10px;
   transition: all 0.3s ease;
-  min-height: 500px;
+  min-height: 50px;
   border-right: solid #fe7f4d5e 2px;
   margin-bottom: 6px;
 }
