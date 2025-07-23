@@ -161,20 +161,20 @@
       <form id ="contactForm">
         <div class ="row">
         <div class="col-md-6 mb-3">
-          <input type="text" id ="nome" class="form-control" placeholder="Nome" required>
+          <input type="text" id ="nome" class="form-control" placeholder="Nome*" required>
         </div>
          <div class="col-md-6 mb-3">
-          <input type="text" id = "cognome" class="form-control" placeholder="Cognome" required>
+          <input type="text" id = "cognome" class="form-control" placeholder="Cognome*" required>
         </div>
         </div>
          <div class="form-group mb-3">
-          <input type="text" id ="telefono" class="form-control" placeholder="Telefono" required>
+          <input type="text" id ="telefono" class="form-control" placeholder="Telefono*" required>
         </div>
         <div class="form-group mb-3">
-          <input type="email" id = "email" class="form-control" placeholder="Email" required>
+          <input type="email" id = "email" class="form-control" placeholder="Email*" required>
         </div>
         <div class="form-group mb-3">
-          <textarea id = "messaggio"class="form-control" rows="4" placeholder="Il tuo messaggio" required></textarea>
+          <textarea id = "messaggio"class="form-control" rows="4" placeholder="Il tuo messaggio*" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Invia</button>
       </form>
@@ -204,13 +204,14 @@
         <h5 class="text-uppercase mb-3">Newsletter</h5>
         <form action="#">
           <div class="mb-3">
-            <input id="email" type="email" class="form-control" placeholder="Indirizzo E-mail" required />
+            <input id="email2" type="email" class="form-control" placeholder="Indirizzo E-mail" required />
           </div>
           <button type="button" class="btn btn-outline-dark" onclick="emailSent()">Iscriviti</button>
+          <p>Cliccando su "Iscriviti" accetta la nostra <a href="">informativa sulla privacy</a></p>
         </form>
         <script>
           function emailSent(){
-            const email = document.getElementById("email").value.trim();
+            const email = document.getElementById("email2").value.trim();
             let alertMsg = (email !== '') ? 'Email registrata con successo!' : 'Il campo non può essere vuoto';
             alert(alertMsg);
           }
